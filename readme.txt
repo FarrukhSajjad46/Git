@@ -25,3 +25,17 @@ git diff :- cwd ko last time staged data sy compare karta he.
 git diff --staged :- Ye staged data ko last commit data sy compare karta he.
 .gitignore :- This type of named file allow git to ignore specified name.
 git push origin master :- ye push ker dy ga origin master me.
+
+3 step to create private ssh key from git hub:
+first: key generate karna
+ssh-keygen -t ed25519 -C "farrukhsajjad46@gmail.com"
+second: ensure that ssh agent is running if no then run it with command.
+eval "$(ssh-agent -s)"
+third: agent ko apni identity karwana
+ssh-add ~/.ssh/id_ed25519
+fourth: clip for copy and tail for show key in bash
+clip < ~/.ssh/id_ed25519.pub
+
+ssh key:
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMRYpVRMJD4TYyEmvzTvac02srlT5g09xqlpoOrisVHj farrukhsajjad46@gmail.com
+

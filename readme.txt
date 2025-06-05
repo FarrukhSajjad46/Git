@@ -24,3 +24,4 @@ git clone 'url' :- Clone a project in your local disk.
 git diff :- cwd ko last time staged data sy compare karta he.
 git diff --staged :- Ye staged data ko last commit data sy compare karta he.
 .gitignore :- This type of named file allow git to ignore specified name.
+git push origin master :- ye push ker dy ga origin master me.
